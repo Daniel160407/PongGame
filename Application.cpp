@@ -41,6 +41,21 @@ int main(){
             rightPaddle.move(0, 5);
         }
 
+        ball.move(ballSpeedX, ballSpeedY);
+
+        if(ball.getGlobalBounds().intersects(leftPaddle.getGlobalBounds()) ||
+            ball.getGlobalBounds().intersects(rightPaddle.getGlobalBounds())){
+            ballSpeedX = -ballSpeedX;
+        }
+
+        if(ball.getPosition().y < 0 || ball.getPosition().y + ball.getRadius() * 2 > window.getSize().y){
+            ballSpeedY = -ballSpeedY;
+        }
+
+        if(ball.getPosition().x < 0 || ball.getPosition().x + ball.getRadius() * 2 > window.getSize().x){
+            ball.setPosition(390, 290);
+        }
+
         window.clear();
 
         window.draw(leftPaddle);
@@ -49,4 +64,6 @@ int main(){
 
         window.display();
     }
+
+    return 0;
 }
