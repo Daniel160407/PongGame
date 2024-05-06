@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Home/Desktop/New folder (2)/New folder",
-      "program": "c:/Users/Home/Desktop/New folder (2)/New folder/build/Debug/outDebug",
+      "cwd": "c:/Users/Home/Desktop/New folder (2)/PongGame",
+      "program": "c:/Users/Home/Desktop/New folder (2)/PongGame/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
